@@ -30,7 +30,7 @@ A full-stack web application for SafeMax Security, offering VAPT services and cy
    - The database will be created automatically when you start the server
    - Run the following command to create the admin user:
      ```bash
-     node server/scripts/createAdmin.js
+     node server/index.js
      
      ```
    Default admin credentials:
