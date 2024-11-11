@@ -1,7 +1,7 @@
 # SafeMax Security - Cybersecurity Services Platform
 
 A full-stack web application for SafeMax Security, offering VAPT services and cybersecurity solutions. Built with React, Node.js, Express, and MongoDB.
-![Image 1](https://github.com/ayushgupta9906/SafeMaxx/blob/sae/Screenshot%202024-11-10%20025039.png)
+![Image 1](https://github.com/ayushgupta9906/SafeMaxx/blob/sae/Screenshot%202024-11-11%20195350.png)
 ![Image 2](https://github.com/ayushgupta9906/SafeMaxx/blob/sae/Screenshot%202024-11-10%20025052.png)
 ![Image 3](https://github.com/ayushgupta9906/SafeMaxx/blob/sae/Screenshot%202024-11-10%20025103.png)
 ![Image 4](https://github.com/ayushgupta9906/SafeMaxx/blob/sae/Screenshot%202024-11-10%20025115.png)
