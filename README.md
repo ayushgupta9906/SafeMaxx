@@ -53,11 +53,15 @@ A full-stack web application for SafeMax Security, offering VAPT services and cy
    - Backend: https://safemaxx.onrender.com
 
 In short-
-**node server/index.js
+```
+node server/index.js
+npm run dev
 
-# **npm run dev**
 
-# **Project Structure**
+Project Structure
+```
+
+.
 
 ```
 safemax-security/
@@ -129,7 +133,7 @@ npm run build
 ## Technologies Used
 
 - **Frontend:**
-  - React 18
+  - React
   - TypeScript
   - Tailwind CSS
   - React Router DOM
