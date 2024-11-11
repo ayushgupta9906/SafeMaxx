@@ -18,7 +18,7 @@ A full-stack web application for SafeMax Security, offering VAPT services and cy
 
 1. **Clone and Install Dependencies**
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/ayushgupta9906/SafeMaxx.git
    cd safemax-security
    npm install
    ```
@@ -26,7 +26,7 @@ A full-stack web application for SafeMax Security, offering VAPT services and cy
 2. **Environment Setup**
    Create a `.env` file in the root directory:
    ```
-   MONGODB_URI=mongodb://localhost:27017/sm
+   MONGODB_URI=
    JWT_SECRET=your_jwt_secret_key_here
    PORT=5000
    ```
@@ -36,7 +36,7 @@ A full-stack web application for SafeMax Security, offering VAPT services and cy
    - The database will be created automatically when you start the server
    - Run the following command to create the admin user:
      ```bash
-     node server/scripts/createAdmin.js
+     node server/index.js
      
      ```
    Default admin credentials:
@@ -45,14 +45,19 @@ A full-stack web application for SafeMax Security, offering VAPT services and cy
 
 4. **Start Development Servers**
    ```bash
-   # Start both frontend and backend servers
+   # Start frontend server
    npm run dev
    ```
    This will start:
    - Frontend: http://localhost:5173
    - Backend: https://safemaxx.onrender.com
 
-## Project Structure
+In short-
+**node server/index.js
+
+# **npm run dev**
+
+# **Project Structure**
 
 ```
 safemax-security/
