@@ -21,27 +21,31 @@ const Home = () => {
                 </h1>
               </div>
               <div className="relative">
-                <img
-                  src="https://drive.google.com/uc?export=view&id=1-X9qAePW0JiVSV2D6e6vkdwvnESFK1ZE"
-                  alt="SafeMax Logo"
-                  style={{
-                    width: '150px', // Adjust size as needed
-                    height: 'auto',
-                    animation: 'scaleAnimation 2s infinite',
-                    position: 'relative',
-                    zIndex: 10,
-                  }}
-                />
+              <a href='https://postimages.org/' target='_blank'>
+  <img
+    src='https://i.postimg.cc/d35Xgc0J/sm-2.png'
+    alt='SafeMax Logo'
+    style={{
+      width: '200px', // Adjust size as needed
+      height: 'auto',
+      animation: 'scaleAnimation 2s infinite',
+      position: 'relative',
+      zIndex: 10,
+    }}
+  />
+</a>
+
                 <div
-                  className="absolute inset-0 bg-blue-500 rounded-full blur-lg"
-                  style={{
-                    width: '200px', // Adjust size as needed
-                    height: '200px', // Adjust size as needed
-                    top: '-25%', // Center the glow behind the image
-                    left: '-25%',
-                    zIndex: 0,
-                  }}
-                ></div>
+  className="absolute inset-0 bg-blue-500 rounded-full blur-lg"
+  style={{
+    width: '250px',       // Slightly larger than the image for a glow effect
+    height: '250px',      // Same as width for a circular glow
+    top: '-20px',         // Adjust to center the glow behind the image
+    left: '-30px',        // Adjust to center the glow behind the image
+    zIndex: 0,
+  }}
+></div>
+
               </div>
               <style>
                 {`
