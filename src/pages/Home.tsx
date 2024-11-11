@@ -22,7 +22,7 @@ const Home = () => {
               </div>
               <div className="relative">
                 <img
-                  src="dist\assets\sm-DlikNzjF.png"
+                  src="sm.png"
                   alt="SafeMax Logo"
                   style={{
                     width: '150px', // Adjust size as needed
