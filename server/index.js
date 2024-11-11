@@ -6,7 +6,7 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 import authRoutes from './routes/auth.js';
 import appointmentRoutes from './routes/appointments.js';
-// import  createAdminUser from './scripts/createAdmin.js';
+// import { createAdminUser } from './scripts/createAdmin.js';
 
 
 
@@ -18,7 +18,7 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 // Middleware
 app.use(cors({
   
-  origin: ['http://localhost:5173', 'http://localhost:5000'],
+  origin: ['http://localhost:5174', 'https://safemaxx.onrender.com'],
   credentials: true,
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH'],
   allowedHeaders: ['Content-Type', 'Authorization']
@@ -43,22 +43,16 @@ app.get('*', (req, res) => {
 const port = process.env.PORT || 5000
 // MongoDB connection
 
+const PORT = process.env.PORT || 5000;
+app.listen(PORT, () => {
+  connectDB();
+  console.log(`Server running on port ${PORT}`);
+  // createAdminUser();
+});
 
-let db = mongoose.connection;
-
-db.once('open', () => console.log('connected to the database'));
 function connectDB() {
-  console.log("mongo db urui: ", process.env.MONGODB_URI)
-  
-  mongoose.connect(process.env.MONGODB_URI || 'mongodb:mongodb://localhost:27017/sm')
-  
-  .then(() => console.log('Connected to MongoDB'))
-  .catch(err => console.error('MongoDB connection error:', err));
+ 
+  mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/sm')
+    .then(() => console.log('Connected to MongoDB'))
+    .catch(err => console.error('MongoDB connection error:', err));
 }
-
-  const PORT = process.env.PORT || 5000;
-  app.listen(PORT, () => {
-    connectDB();
-    console.log(`Server running on port ${PORT}`);
-    // createAdminUser();
-  });

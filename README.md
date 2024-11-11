@@ -50,7 +50,7 @@ A full-stack web application for SafeMax Security, offering VAPT services and cy
    ```
    This will start:
    - Frontend: http://localhost:5173
-   - Backend: http://localhost:5000
+   - Backend: https://safemaxx.onrender.com
 
 ## Project Structure
 

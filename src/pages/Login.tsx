@@ -26,7 +26,7 @@ const Login = () => {
     try {
       // Log credentials to ensure correct data
       console.log(credentials);
-      const response = await axios.post('http://localhost:5000/api/auth/login', credentials, {
+      const response = await axios.post('https://safemaxx.onrender.com/api/auth/login', credentials, {
         headers: {
           'Content-Type': 'application/json'
         }

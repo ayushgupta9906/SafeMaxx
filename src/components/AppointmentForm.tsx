@@ -18,7 +18,7 @@ const AppointmentForm = () => {
     setLoading(true);
 
     try {
-      const response = await axios.post('http://localhost:5000/api/appointments', formData, {
+      const response = await axios.post('https://safemaxx.onrender.com/api/appointments', formData, {
         headers: {
           'Content-Type': 'application/json'
         }
