@@ -6,22 +6,22 @@
 
 // const createAdminUser = async () => {
 //   try {
-//     // await mongoose.connect(
-//     //   process.env.MONGODB_URI || 'mongodb://localhost:27017/sm'
-//     // );
+//     await mongoose.connect(
+//       process.env.MONGODB_URI
+//     );
 
 //     const adminUser = {
-//       email: 'admin@safemax.com',
-//       password: 'Admin@123',
+//       email: 'adminn@safemax.com',
+//       password: 'Adminn@123',
 //       role: 'admin',
 //     };
 
 //     const existingAdmin = await User.findOne({ email: adminUser.email });
 
-//     // if (existingAdmin) {
-//     //   console.log('Admin user already exists');
-//     //   process.exit(0);
-//     // }
+//     if (existingAdmin) {
+//       console.log('Admin user already exists');
+//       process.exit(0);
+//     }
 
 //     const user = new User(adminUser);
 //     await user.save();
@@ -36,6 +36,4 @@
 //   }
 // };
 
-// // createAdminUser();
-
-// export {createAdminUser};
+// export default createAdminUser;
