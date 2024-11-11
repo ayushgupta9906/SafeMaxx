@@ -33,6 +33,16 @@ const Home = () => {
       zIndex: 10,
     }}
   />
+                 <div
+  className="absolute inset-0 bg-blue-500 rounded-full blur-lg"
+  style={{
+    width: '250px',       // Slightly larger than the image for a glow effect
+    height: '250px',      // Same as width for a circular glow
+    top: '-20px',         // Adjust to center the glow behind the image
+    left: '-30px',        // Adjust to center the glow behind the image
+    zIndex: 0,
+  }}
+></div>
 </a>
 
                 <div
