@@ -31,6 +31,7 @@ A full-stack web application for SafeMax Security, offering VAPT services and cy
    JWT_SECRET=your_jwt_secret_key_here
    PORT=5000
    ```
+   
 
 3. **Database Setup**
    - Make sure MongoDB is running locally
